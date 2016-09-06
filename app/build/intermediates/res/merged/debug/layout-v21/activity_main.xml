@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.cyril.seekbardemo.MainActivity"
+    android:background="@android:color/black">
+
+    <!--Set the splitTrack attribute to "false" so that the
+    SeekBar Thumb has a transparent background-->
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekBar_with_custom_gradient_background"
+        android:layout_centerVertical="true"
+        android:progressDrawable="@drawable/seekbar_progress_background"
+        android:thumb="@drawable/blue_seekbar_thumb"
+        android:layout_centerHorizontal="true"
+        android:splitTrack="false"/>
+
+    <TextView
+        android:padding="10dp"
+        android:textSize="25sp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/seekBar_with_custom_gradient_background"
+        android:text="Deadpool"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView_in_activity_one"
+        android:textColor="@android:color/holo_blue_light"/>
+</RelativeLayout>

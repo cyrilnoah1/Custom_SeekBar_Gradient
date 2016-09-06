@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--Changing the background color of the SeekBar-->
+    <item
+        android:id="@android:id/background"
+        android:drawable="@drawable/seekbar_background_color" />
+
+    <!--Changing the SeekBar-Progress' color -->
+    <item android:id="@android:id/progress">
+        <clip android:drawable="@drawable/seekbar_blue_to_red_gradient_background_color" />
+    </item>
+
+</layer-list>
